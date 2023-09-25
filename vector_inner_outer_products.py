@@ -40,9 +40,9 @@ def outer_product(vector1, vector2):
 #vector_b = [4, 5, 6]
 
 inner_result = inner_product(vector_a, vector_b)
-%time
+%time    #this function will calculate and print the consumed time
 outer_result = outer_product(vector_a, vector_b)
-%time
+%time    #this function will calculate and print the consumed time
 
 print("The Inner product is:", inner_result)
 print("The Outer product is:")
