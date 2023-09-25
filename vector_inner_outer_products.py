@@ -1,5 +1,5 @@
 #This code asks user two vectors and finds out its inner and outer products.
-
+# Defination area
 def get_vector_input():
     try:
         input_str = input("Enter a vector as comma-separated values (e.g., 1,2,3): ")
@@ -18,6 +18,7 @@ vector_b = get_vector_input()
 
 print("Your chosen Vector A is:", vector_a)
 print("Your chosen Vector B is:", vector_b)
+# For inner product
 
 def inner_product(vector1, vector2):
     if len(vector1) != len(vector2):
@@ -25,7 +26,7 @@ def inner_product(vector1, vector2):
     
     result = sum(x * y for x, y in zip(vector1, vector2))
     return result
-
+# For outer product
 def outer_product(vector1, vector2):
     result = [[0] * len(vector2) for _ in range(len(vector1))]
     
