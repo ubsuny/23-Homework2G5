@@ -22,17 +22,17 @@ print("Your chosen Vector B is:", vector_b)
 def inner_product(vector1, vector2):
     if len(vector1) != len(vector2):
         raise ValueError("Vectors must have the same length for inner product.")
-    
+
     result = sum(x * y for x, y in zip(vector1, vector2))
     return result
 
 def outer_product(vector1, vector2):
     result = [[0] * len(vector2) for _ in range(len(vector1))]
-    
+
     for i in range(len(vector1)):
         for j in range(len(vector2)):
             result[i][j] = vector1[i] * vector2[j]
-    
+
     return result
 
 # Example usage:
@@ -40,7 +40,9 @@ def outer_product(vector1, vector2):
 #vector_b = [4, 5, 6]
 
 inner_result = inner_product(vector_a, vector_b)
+%time
 outer_result = outer_product(vector_a, vector_b)
+%time
 
 print("The Inner product is:", inner_result)
 print("The Outer product is:")
