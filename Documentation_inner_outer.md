@@ -3,7 +3,7 @@
 ### **The Inner Product function:**
 The inner product is calculated by multiplying the corresponding elements of the two vectors and summing the results.
 The inner product of 2 vectors **a** and **b** =
-## **$$sum_{i=1}^N a_{i} b_{i}$$ **
+## ** $$sum_{i=1}^N a_{i} b_{i}$$ **
 
 
 The **inner_product()** function can be used to calculate the inner product of any two vectors of the same length.
