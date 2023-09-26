@@ -5,6 +5,7 @@ The inner product is calculated by multiplying the corresponding elements of the
 The inner product of 2 vectors **a** and **b** =
 # **\sum_{i=0}^{n} a_{i} b_{i} **
 
+
 The **inner_product()** function can be used to calculate the inner product of any two vectors of the same length.
 
 The inner product is a scalar value that represents the similarity between the two vectors.
