@@ -21,6 +21,19 @@ print("Your chosen Vector A is:", vector_a)
 print("Your chosen Vector B is:", vector_b, "\n")
 
 def inner_product(vector1, vector2):
+    """
+   This Code Calculates the inner product of two vectors using a for loop.
+
+
+   Args:
+    a:   array representing the first vector.
+    b:   array representing the second vector.
+
+   Returns:
+    The inner product of the two vectors.
+    A numpy array representing the outer product of the two vectors.
+
+   """
     
     if len(vector1) != len(vector2):
         raise ValueError("Vectors must have the same length for inner product.")
@@ -31,6 +44,19 @@ def inner_product(vector1, vector2):
     return result, execution_time_1a
 
 def outer_product(vector1, vector2):
+    """
+   This Code Calculates the outer product of two vectors using a for loop.
+
+
+   Args:
+    a:   array representing the first vector.
+    b:   array representing the second vector.
+
+   Returns:
+    The inner product of the two vectors.
+    A numpy array representing the outer product of the two vectors.
+
+   """
     result = [[0] * len(vector2) for _ in range(len(vector1))]
     start_time=time.time()
     for i in range(len(vector1)):
@@ -41,6 +67,16 @@ def outer_product(vector1, vector2):
     return result, execution_time_1b
 
 def inner_outer_products_einsum(a, b, time):
+    """
+        This Code Calculates the inner and outer product of two vectors using numpy built-in einsum function
+    Args:
+    a:  NumPy array representing the first vector.
+    b:  NumPy array representing the second vector.
+    Returns:
+        The inner product of the two vectors.
+        A numpy array representing the outer product of the two vectors.
+    
+    """
     start_time = time.time()
     # Calculate inner product
     inner_result2 = np.einsum('i,i->', a, b)
@@ -54,6 +90,16 @@ def inner_outer_products_einsum(a, b, time):
 inner_result2, outer_result2, execution_time_2 = inner_outer_products_einsum(vector_a, vector_b, time)
 
 def inner_outer_products(a, b):
+    """
+    This Code Calculates the inner and outer product of two vectors using numpy built in functions
+    Args:
+    a:  NumPy array representing the first vector.
+    b:  NumPy array representing the second vector.
+    Returns:
+        The inner product of the two vectors.
+        A numpy array representing the outer product of the two vectors.
+    
+    """
     # Calculate inner product
     inner_result3 = np.inner(a, b)
     
