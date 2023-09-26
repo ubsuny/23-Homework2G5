@@ -12,10 +12,10 @@ $$\sum_{i,j=0}^{n} a_{i} b_{j}$$
 
 These two inner and outer product is performed in three ways: 
 - using for-loops
-- using numpy library
+- using the Numpy library
 - using numpy_einsum module
 
-We determine execution time for all three methods, compared them and found out using for-loops is faster than the other two methods. 
+We determined the execution time for all three methods, compared them, and found out that using for-loops is faster than the other two methods. 
 Some outputs:
 
 OUTPUT #1
