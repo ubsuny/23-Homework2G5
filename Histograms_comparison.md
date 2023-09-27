@@ -42,7 +42,8 @@ for run, it will be 0.329 seconds
 
 # conclusion:
 The fastest platform among all is the Quantum lab.
-The fastest function to calculate the inner and outer product as it is clear from the time results we got is the for loops, followed by either numpy inner and outer functions or numpy einsum
+The fastest function to calculate the inner and outer product as it is clear from the time results we got is the for loops, followed by either numpy inner and outer functions or numpy einsum.
+#the time frames using timeit as well showed that the least time execution time is for the inner product using numpy inner function followed by the for loop but they're not much lower than the other functions.
 # Histograms to illustrate the comparison 
 
 
@@ -50,3 +51,4 @@ The fastest function to calculate the inner and outer product as it is clear fro
 ![output_1_0](https://github.com/yasmensarhan27/23-Homework2G5/assets/38404107/47c63fa1-99ce-4df2-ac21-db37eb417ba2)
 ![output_0_0](https://github.com/yasmensarhan27/23-Homework2G5/assets/38404107/1d7ff0c8-ae56-45ac-b4ec-35b88baebca3)
 ![output_3_0](https://github.com/yasmensarhan27/23-Homework2G5/assets/38404107/e7e301d6-e72f-4a1d-afb1-11764869bd9c)
+![output_4_0](https://github.com/yasmensarhan27/23-Homework2G5/assets/38404107/dac33336-2d85-4e6b-97a1-78a63c91313d)
