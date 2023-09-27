@@ -167,7 +167,9 @@ print("Outer product using numpy:")
 print(outer_result3)
 print("Execution time:", execution_time_3, "seconds")
 ```
-##RESULTS
+## RESULTS
+
+```python
     Enter the first vector:
     Enter a vector as comma-separated values (e.g., 1,2,3): 1,2,3
     Enter the second vector:
