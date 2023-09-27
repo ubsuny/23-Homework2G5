@@ -138,3 +138,5 @@ print("Inner product using numpy:", inner_result3)
 print("Outer product using numpy:")
 print(outer_result3)
 print("Execution time:", execution_time_3, "seconds")
+
+
