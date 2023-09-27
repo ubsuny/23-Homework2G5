@@ -1,4 +1,6 @@
-#import numpy library for sciectific calcualations
+#CODE
+```python
+#### import numpy library for sciectific calcualations
 import numpy as np
 #import time library to calculate time
 import time
@@ -89,9 +91,12 @@ def inner_outer_products_einsum(a, b, time):
     start_time = time.time()
     # Calculate inner product using einsum
     inner_result2 = np.einsum('i,i->', a, b)
-    
+    ##print("Execution time of einsum inner product is: " )
+   ## %timeit np.einsum('i,i->', a, b)
     # Calculate outer product using einsum
     outer_result2 = np.einsum('i,j->ij', a, b)
+    ##print("Execution time of einsum inner product is: " )
+   ## %timeit np.einsum('i,j->ij', a, b)
     end_time = time.time()
     execution_time_2 = end_time - start_time
    
@@ -113,6 +118,7 @@ def inner_outer_products(a, b):
     
     """
     # Calculate inner product using numpy inner product function and assign the result to the variable inner_result3
+    
     inner_result3 = np.inner(a, b)
     
     # Calculate outer product using numpy outer product function and assign the result to the variable outer_result3
@@ -151,3 +157,49 @@ print("Inner product using numpy:", inner_result3)
 print("Outer product using numpy:")
 print(outer_result3)
 print("Execution time:", execution_time_3, "seconds")
+```
+#RESULTS from Quantum Lab 
+    Enter the first vector:
+
+
+    Enter a vector as comma-separated values (e.g., 1,2,3):  1,2,3
+
+
+    Enter the second vector:
+
+
+    Enter a vector as comma-separated values (e.g., 1,2,3):  4,5,6
+
+
+    Your chosen Vector A is: [1.0, 2.0, 3.0]
+    Your chosen Vector B is: [4.0, 5.0, 6.0] 
+    
+    ----------------------- For-loops-----------------------
+    The Inner product: 32.0
+    The Outer product:
+    [4.0, 5.0, 6.0]
+    [8.0, 10.0, 12.0]
+    [12.0, 15.0, 18.0]
+    Execution Time: 8.821487426757812e-06 seconds 
+    
+    ----------------------- numpy_einsum-----------------------
+    Inner product: 32.0
+    Outer product:
+    [[ 4.  5.  6.]
+     [ 8. 10. 12.]
+     [12. 15. 18.]]
+    Execution time: 5.602836608886719e-05 seconds 
+    
+    ----------------------- numpy-----------------------
+    Inner product using numpy: 32.0
+    Outer product using numpy:
+    [[ 4.  5.  6.]
+     [ 8. 10. 12.]
+     [12. 15. 18.]]
+    Execution time: 0.0001277923583984375 seconds
+
+
+
+```python
+
+```
